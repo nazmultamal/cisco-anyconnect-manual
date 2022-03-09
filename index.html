@@ -4,15 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Cisco AnyConnect | Instructions</title>
 </head>
 <body>
     <h2>Cisco AnyConnect Secure Mobility Client</h2>
     <p>Cisco AnyConnect client lets you to connect to your remote organization in a secured way. To start using AnyConnect you need to install it in your workstation first and you may need administrator/root priviledge for that.</p>
+    
     <h2>Download</h2>
     <p>There are severl versions of AnyConnect. It's always a good idea to use the latest version available. Dependinig on what operating system you have in your workstation you need different software or packages.</p>
-    <a href="./anyconnect-win-4.10.01075-core-vpn-predeploy-k9.msi">AnyConnect Client for Windows</a>
-    <a href="./anyconnect-macos-4.10.01075-predeploy-k9.dmg">AnyConnect Client for MacOS</a>
-    <a href="./anyconnect-linux64-4.10.01075-predeploy-k9.tar.gz">AnyConnect Client for Linux</a>
+    <ul>
+        <li><a href="./files/anyconnect-win-4.10.01075-core-vpn-predeploy-k9.msi">AnyConnect Client for Windows</a></li>
+        <li><a href="./files/anyconnect-macos-4.10.01075-predeploy-k9.dmg">AnyConnect Client for MacOS</a></li>
+        <li><a href="./files/anyconnect-linux64-4.10.01075-predeploy-k9.tar.gz">AnyConnect Client for Linux</a></li>
+    </ul>
+    
+    <h2>Connecting to VPN</h2>
+    <p>To connect to a remote VPN, you need at least two peice of information, a gateway address(IP or FQDN) and a valid credentials.
+        Both of these will be provided by your network administrator. Usually a gateway address looks like this: <strong>https://example.url.org</strong> and credential is <b>"yourname"</b>, <b>"$omePassW0rd"</b>.
+        Once you got the right gateway address and credentials, use that to connect to VPN.</p>
+        After installing AnyConnect in your workstation, follow below steps.
+        <ol>
+            <li>
+                Copy the FQDN address and paste it in AnyConnect and click on <b>"Connect"</b>.<br><br>
+                <img src="./images/dial-up.png" alt="Dial-Up Window"><br><br><br>
+            </li>
+            <li>
+                Enter your username and password, then click on <b>"OK"</b>.<br><br>
+                <img src="./images/logon-screen.png" alt="Login-Screen"><br><br><br>
+            </li>
+            <li>
+                Once connected successfully, you will see a screen like below.<br><br>
+                <img src="./images/connect-screen.png" alt="Successfull Connection">
+            </li>
+        </ol>
 </body>
 </html>
